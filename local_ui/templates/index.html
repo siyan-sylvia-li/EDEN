@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Icarus Demo</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>-->
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <style>
+      .bottom-three {
+         margin-bottom: 3cm;
+      }
+    </style>
+</head>
+<body style="background-color: black">
+<div class="w3-container w3-center mainSection" style="top:50%">
+    <div class="bottom-three"></div>
+    <div id="instruct" class="w3-container w3-center">
+        <h1 style="color: white;">Hello, I am a chatbot.</h1>
+        <h4 style="color: white">You can chat with me for however long you'd like.</h4>
+        <h4 style="color: white">When you are ready, press the <span style="color: darkseagreen;"><b>"Start Conversation"</b></span> button.</h4>
+        <h4 style="color: white">And you can press the <span style="color: indianred;"><b>"Stop Conversation"</b></span> button any time.</h4>
+    </div>
+<!--    <div id="siri-container" class="w3-container" style="width: 100%; height: 50%"></div>-->
+<!--    <script>-->
+<!--        var siriWave = new SiriWave({-->
+<!--            container: document.getElementById("siri-container"),-->
+<!--            cover: true,-->
+<!--            height: 200,-->
+<!--            style: 'classic'-->
+<!--        });-->
+<!--    </script>-->
+    <canvas class="visualizer" style="width: 100%; height: 150px"></canvas>
+    <div class="w3-container w3-center" style="top: 50%">
+        <div class="w3-cell-row w3-container" style="width: 100%">
+            <div class="w3-container w3-cell w3-center" style="width: 50%">
+                <button class="w3-button w3-round-large w3-green w3-margin w3-block starter">Start
+                Conversation
+                </button>
+            </div>
+
+            <div class="w3-container w3-cell w3-center" style="width: 50%">
+                <button class="w3-button w3-round-large w3-red w3-margin w3-block stopper">
+                End Conversation
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="w3-margin-top w3-container w3-center" style="text-align: center">
+        <p style="color: white; font-size: x-large; overflow-x: visible; width: 60%; margin: 0 auto" class="disp w3-center">......... Our Conversational History will be displayed here .........</p>
+    </div>
+    <audio id="audio"></audio>
+</div>
+<script src="../static/js/recorder.js"></script>
+</body>
+</html>

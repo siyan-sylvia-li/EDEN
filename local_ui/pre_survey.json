@@ -1,0 +1,10 @@
+{
+  "id": 0,
+  "mandarin_translation": true,
+  "feedback_pref": {
+    "short": false,
+    "example": true,
+    "detailed": false,
+    "no_praise": false
+  }
+}
