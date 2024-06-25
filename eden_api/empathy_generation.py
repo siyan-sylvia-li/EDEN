@@ -6,10 +6,10 @@ import pickle
 
 from personalization import feedback_style_update
 
-os.environ["OPENAI_API_KEY"] = "<OPENAI_KEY>"
+os.environ["OPENAI_API_KEY"] = "<OPENAI_API_KEY>"
 
 import openai
-openai.api_key = "<OPENAI_KEY>"
+openai.api_key = "<OPENAI_API_KEY>"
 
 
 def create_convo(history):
@@ -50,7 +50,7 @@ def generate_gpt_empathy_rewrite(output):
     return response.choices[0].message.content
 
 
-client = openai.OpenAI(api_key="<OPENAI_KEY>")
+client = openai.OpenAI(api_key="<OPENAI_API_KEY>")
 turbo = dspy.OpenAI(model="gpt-3.5-turbo-instruct", max_tokens=1000)
 dspy.configure(lm=turbo)
 reload_chain = OfferFeedback()

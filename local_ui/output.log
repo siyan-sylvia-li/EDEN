@@ -1,0 +1,67 @@
+DEBUG:botocore.hooks:Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+DEBUG:botocore.hooks:Changing event name from before-call.apigateway to before-call.api-gateway
+DEBUG:botocore.hooks:Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+DEBUG:botocore.hooks:Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+DEBUG:botocore.hooks:Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+DEBUG:botocore.hooks:Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+DEBUG:botocore.hooks:Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+DEBUG:botocore.hooks:Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+DEBUG:botocore.hooks:Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+DEBUG:botocore.hooks:Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+DEBUG:botocore.hooks:Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+DEBUG:botocore.session:Setting config variable for region to 'us-west-2'
+DEBUG:botocore.loaders:Loading JSON file: /home/sylvia/miniconda3/envs/eden_ui/lib/python3.9/site-packages/botocore/data/endpoints.json
+DEBUG:botocore.loaders:Loading JSON file: /home/sylvia/miniconda3/envs/eden_ui/lib/python3.9/site-packages/botocore/data/sdk-default-configuration.json
+DEBUG:botocore.hooks:Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f54e456fe50>
+DEBUG:botocore.loaders:Loading JSON file: /home/sylvia/miniconda3/envs/eden_ui/lib/python3.9/site-packages/botocore/data/polly/2016-06-10/service-2.json.gz
+DEBUG:botocore.loaders:Loading JSON file: /home/sylvia/miniconda3/envs/eden_ui/lib/python3.9/site-packages/botocore/data/polly/2016-06-10/endpoint-rule-set-1.json.gz
+DEBUG:botocore.loaders:Loading JSON file: /home/sylvia/miniconda3/envs/eden_ui/lib/python3.9/site-packages/botocore/data/partitions.json
+DEBUG:botocore.hooks:Event creating-client-class.polly: calling handler <function add_generate_presigned_url at 0x7f54e45dfee0>
+DEBUG:botocore.configprovider:Looking for endpoint for polly via: environment_service
+DEBUG:botocore.configprovider:Looking for endpoint for polly via: environment_global
+DEBUG:botocore.configprovider:Looking for endpoint for polly via: config_service
+DEBUG:botocore.configprovider:Looking for endpoint for polly via: config_global
+DEBUG:botocore.configprovider:No configured endpoint found.
+DEBUG:botocore.endpoint:Setting polly timeout as (60, 60)
+DEBUG:botocore.loaders:Loading JSON file: /home/sylvia/miniconda3/envs/eden_ui/lib/python3.9/site-packages/botocore/data/_retry.json
+DEBUG:botocore.client:Registering retry handlers for service: polly
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5023
+ * Running on http://172.27.228.31:5023
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:botocore.hooks:Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+DEBUG:botocore.hooks:Changing event name from before-call.apigateway to before-call.api-gateway
+DEBUG:botocore.hooks:Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+DEBUG:botocore.hooks:Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+DEBUG:botocore.hooks:Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+DEBUG:botocore.hooks:Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+DEBUG:botocore.hooks:Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+DEBUG:botocore.hooks:Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+DEBUG:botocore.hooks:Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+DEBUG:botocore.hooks:Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+DEBUG:botocore.hooks:Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+DEBUG:botocore.session:Setting config variable for region to 'us-west-2'
+DEBUG:botocore.loaders:Loading JSON file: /home/sylvia/miniconda3/envs/eden_ui/lib/python3.9/site-packages/botocore/data/endpoints.json
+DEBUG:botocore.loaders:Loading JSON file: /home/sylvia/miniconda3/envs/eden_ui/lib/python3.9/site-packages/botocore/data/sdk-default-configuration.json
+DEBUG:botocore.hooks:Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f9f0563ce50>
+DEBUG:botocore.loaders:Loading JSON file: /home/sylvia/miniconda3/envs/eden_ui/lib/python3.9/site-packages/botocore/data/polly/2016-06-10/service-2.json.gz
+DEBUG:botocore.loaders:Loading JSON file: /home/sylvia/miniconda3/envs/eden_ui/lib/python3.9/site-packages/botocore/data/polly/2016-06-10/endpoint-rule-set-1.json.gz
+DEBUG:botocore.loaders:Loading JSON file: /home/sylvia/miniconda3/envs/eden_ui/lib/python3.9/site-packages/botocore/data/partitions.json
+DEBUG:botocore.hooks:Event creating-client-class.polly: calling handler <function add_generate_presigned_url at 0x7f9f056adee0>
+DEBUG:botocore.configprovider:Looking for endpoint for polly via: environment_service
+DEBUG:botocore.configprovider:Looking for endpoint for polly via: environment_global
+DEBUG:botocore.configprovider:Looking for endpoint for polly via: config_service
+DEBUG:botocore.configprovider:Looking for endpoint for polly via: config_global
+DEBUG:botocore.configprovider:No configured endpoint found.
+DEBUG:botocore.endpoint:Setting polly timeout as (60, 60)
+DEBUG:botocore.loaders:Loading JSON file: /home/sylvia/miniconda3/envs/eden_ui/lib/python3.9/site-packages/botocore/data/_retry.json
+DEBUG:botocore.client:Registering retry handlers for service: polly
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 208-574-710
+INFO:werkzeug:127.0.0.1 - - [25/Jun/2024 19:19:43] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Jun/2024 19:19:43] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jun/2024 19:19:43] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jun/2024 19:19:43] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jun/2024 19:19:44] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
