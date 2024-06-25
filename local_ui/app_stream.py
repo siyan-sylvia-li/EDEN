@@ -1,43 +1,23 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import base64
-import copy
-import random
-import threading
 import uuid
 
-from flask import Flask, Response
-from flask import request
-from flask import render_template, send_from_directory, send_file, session
+from flask import Flask
+from flask import render_template, session
 from flask_session import Session
-import os
-from datetime import datetime
 
-import sys
-import torch
 import numpy as np
-import glob
 import librosa
-import time
-from flask_socketio import SocketIO, send, emit
+from flask_socketio import SocketIO, emit
 import boto3
-from flask import copy_current_request_context
 from flask_cors import CORS
-from urllib import request
-import wave
 import logging
 import requests, json
 
-import whisper
 
 logging.basicConfig(filename='output.log', encoding='utf-8', level=logging.DEBUG)
 
-device = "cuda:0" if torch.cuda.is_available() else "cpu"
-print(device)
 
-"""
-    Loading wav2vec model
-"""
 
 RESPONSE_URL = "<GPU_SERVER>/call"
 PRE_SURVEY_URL = "<GPU_SERVER>/pre_survey"
@@ -80,7 +60,6 @@ def speak_text(text):
         text = text.split(" // ")[0]
     if "/" in text:
         text = text.replace("/", "")
-    # buf = StringIO()
     if text == "":
         return 404
     try:
@@ -107,8 +86,6 @@ def predict(user_input):
     session['buffer'].extend(user_input)
     if not session["agent_speaking"] and not session["waiting"]:
         buff = session['buffer'][:]
-        # with open("user.wav", "wb+") as f:
-        #     f.write(buff)
         wav = np.frombuffer(buff, dtype=np.int16).astype(np.float32)
 
         # Scale the audio
