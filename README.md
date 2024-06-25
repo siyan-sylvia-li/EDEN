@@ -13,4 +13,14 @@ Our repository is organized as the following:
 2. `local_ui/`: A barebone UI for using EDEN locally! It is a streaming chatbot UI that you can adopt for your own purposes as well!
 3. `dialogue_model/`: Code and data for training our LLama-2 conversation model.
 4. `grammar_model/`: Data for training our Llama-2 spoken grammar correction model (under construction).
-5. `experimental_data/`: Data from our user study. Specifically, we include the informed consent form, as well as the data we used for analyses, for reproduction purposes. 
+5. `experimental_data/`: Data from our user study. Specifically, we include the informed consent form, as well as the data we used for analyses, for reproduction purposes.
+
+
+## To Run EDEN Locally
+1. Please refer to `eden_api/` for how to get your EDEN backend spun up on a GPU server; just supply your OpenAI Key!
+2. Check out `local_ui/` for running our minimalistic local user interface; make sure that you update the files with the link to your GPU server so that everything calls each other correctly!
+
+## To Use Our Models
+We supply a [spoken grammar correction model](https://huggingface.co/sylviali/llama-2-gpt4-grammar) and a [conversation model tailored for English as a second language learners](https://huggingface.co/sylviali/conversation_llama_esl). To use these models, please refer to their respective directories for usage examples. If you have any questions, please don't hesitate to make an issue!
+
+Thank you for your interest :D 
