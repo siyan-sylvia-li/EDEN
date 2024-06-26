@@ -5,7 +5,12 @@ This is not the user interface we used for our user studies, but instead a minim
 People are also more than welcome to use this UI for their own chatbots!
 
 ### General Workflow
-
+1. Click on `Start Conversation` to begin recording your voice
+2. User input is sent through the socket to the Flask every 0.5 seconds
+3. If the UI server detects that you have been silent for 1 second, we call the EDEN API for responses
+4. The EDEN API would handle converting your speech segment to text, as well as using our in-house Llama model to obtain a response, or provide a piece of empathetic feedback if needed
+5. The generated response is converted to audio on the UI side using Amazon Polly, and then played in the interface
+6. Whenever you want to stop the conversation, you can click on the `Stop Conversation` button
 
 ### Setup
 1. Install all dependencies by creating a conda environment by using the `environment_ui.yml` file
