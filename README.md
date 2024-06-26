@@ -22,18 +22,29 @@ Please refer to `eden_api/` for how to get your EDEN backend spun up on a GPU se
 Check out `local_ui/` for running our minimalistic local user interface; make sure that you update the files with the link to your GPU server so that everything calls each other correctly!
 
 More specifically,
-### Setup
+### Running the EDEN API
+Everything here is done within the `eden_api/` directory.
+
+#### Setup
 1. Replace all the <OPENAI_API_KEY> with your own API keys
 2. Create a conda environment with the `.yml` file
 3. Create two directories: `audio_cache` and `model_storage`, since they are needed in the server running process
 4. Download the `pytorch_model.bin` file from [this huggingface wav2vec2 model](https://huggingface.co/ehcalabres/wav2vec2-lg-xlsr-en-speech-emotion-recognition/tree/main), and place it in the `model_storage` directory
 
-### Run The Server
+#### Run The Server
 ```shell
 python3 app.py --serving_port=<PORT_NUMBER>
 ```
 
 Make sure to update the URL for the GPU server and the port you are running the Flask application on in the front-end UI code, located under `local_ui/`.
+
+### Running the Local UI
+Here, we move to the `local_ui/` directory.
+
+#### Setup
+
+
+#### Run the Local UI
 
 ## To Use Our Models
 We supply a [spoken grammar correction model](https://huggingface.co/sylviali/llama-2-gpt4-grammar) and a [conversation model tailored for English as a second language learners](https://huggingface.co/sylviali/conversation_llama_esl). To use these models, please refer to their respective directories for usage examples. If you have any questions, please don't hesitate to make an issue!
