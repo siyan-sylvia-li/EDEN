@@ -1,6 +1,6 @@
 # EDEN: Empathetic Dialogues for English learning
 
-This is the code for our paper **EDEN: Empathetic Dialogues for English learning**.
+This is the code for our paper **[EDEN: Empathetic Dialogues for English learning](https://arxiv.org/abs/2406.17982)**.
 
 Our paper improves upon our previous work, [Using Adaptive Empathetic Responses for Teaching English](https://arxiv.org/abs/2404.13764). We detail our specific improvements in the following figure, where our improvements are highlighted in green:
 
